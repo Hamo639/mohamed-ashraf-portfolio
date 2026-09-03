@@ -58,4 +58,23 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/Hamo639/avira-sport",
   },
+  {
+  id: 4,
+  title: "Mohamed Ashraf Portfolio",
+  category: "Developer Portfolio",
+  description:
+    "A modern responsive developer portfolio built with Next.js, featuring an interactive AI-style portfolio guide, VS Code-inspired command palette, animated sections, project showcase, skills, SEO metadata and Open Graph support.",
+  technologies: [
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "Framer Motion",
+    "React Icons",
+    "Vercel",
+  ],
+  github:
+    "https://github.com/Hamo639/mohamed-ashraf-portfolio",
+  live:
+    "https://mohamed-ashraf-portfolio-ten.vercel.app/",
+},
 ];
