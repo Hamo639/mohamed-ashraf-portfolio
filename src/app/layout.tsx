@@ -12,7 +12,9 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  "https://mohamed-ashraf-portfolio-ten.vercel.app";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   verification: {
@@ -20,7 +22,7 @@ export const metadata: Metadata = {
 },
 
   title: {
-    default: "Mohamed Ashraf | Frontend Developer",
+    default: "Mohamed Ashraf",
     template: "%s | Mohamed Ashraf",
   },
 
