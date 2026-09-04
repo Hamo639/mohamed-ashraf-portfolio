@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+
 import { Inter } from "next/font/google";
 
 import Navbar from "@/components/Navbar";
@@ -15,19 +16,21 @@ const inter = Inter({
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ??
   "https://mohamed-ashraf-portfolio-ten.vercel.app";
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+
   verification: {
-  google: "meH6XjiXeoPrxmdUucnwAHcV8A1qx_22I3lr9IjVAYo",
-},
+    google: "meH6XjiXeoPrxmdUucnwAHcV8A1qx_22I3lr9IjVAYo",
+  },
 
   title: {
-    default: "Mohamed Ashraf",
+    default: "Mohamed Ashraf | Frontend Developer React Next.js",
     template: "%s | Mohamed Ashraf",
   },
 
   description:
-    "Frontend Developer building scalable SaaS platforms and modern web applications using React, Next.js, TypeScript, Supabase and modern frontend technologies.",
+    "Mohamed Ashraf is a Frontend Developer specializing in React, Next.js, TypeScript, JavaScript, and building scalable modern web applications.",
 
   keywords: [
     "Mohamed Ashraf",
@@ -41,7 +44,10 @@ export const metadata: Metadata = {
     "Next.js",
     "TypeScript",
     "Supabase",
+    "Egypt Frontend Developer",
   ],
+
+  category: "Technology",
 
   authors: [
     {
@@ -53,8 +59,11 @@ export const metadata: Metadata = {
 
   openGraph: {
     type: "website",
+
     locale: "en_US",
+
     url: "/",
+
     siteName: "Mohamed Ashraf Portfolio",
 
     title: "Mohamed Ashraf | Frontend Developer",
@@ -85,7 +94,14 @@ export const metadata: Metadata = {
 
   robots: {
     index: true,
+
     follow: true,
+
+    googleBot: {
+      index: true,
+
+      follow: true,
+    },
   },
 };
 
@@ -95,15 +111,41 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" dir="ltr">
       <body
         className={`${inter.variable} min-h-screen bg-[#111118] text-zinc-100 antialiased`}
       >
+        {/* Google Structured Data */}
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+
+              "@type": "Person",
+
+              name: "Mohamed Ashraf",
+
+              url: "https://mohamed-ashraf-portfolio-ten.vercel.app",
+
+              jobTitle: "Frontend Developer",
+
+              sameAs: [
+                "https://github.com/Hamo639",
+
+                "https://www.linkedin.com/in/mohamed-ashraf-5a4698426",
+              ],
+            }),
+          }}
+        />
+
         <Navbar />
 
         {children}
 
         <CommandPalette />
+
         <PortfolioGuide />
       </body>
     </html>
