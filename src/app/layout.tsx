@@ -13,9 +13,11 @@ const inter = Inter({
 });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
-
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  verification: {
+  google: "meH6XjiXeoPrxmdUucnwAHcV8A1qx_22I3lr9IjVAYo",
+},
 
   title: {
     default: "Mohamed Ashraf | Frontend Developer",
