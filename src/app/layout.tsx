@@ -69,8 +69,7 @@ export const metadata: Metadata = {
     title: "Mohamed Ashraf | Frontend Developer",
 
     description:
-      "I build scalable web applications, SaaS platforms and modern digital products using React, Next.js and TypeScript.",
-
+"Mohamed Ashraf - Frontend Developer specializing in React, Next.js, TypeScript, and modern web development. View my portfolio, projects, and experience building scalable web applications.",
     images: [
       {
         url: "/opengraph-image",

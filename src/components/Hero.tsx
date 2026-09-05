@@ -201,12 +201,12 @@ export default function Hero() {
               lg:text-[78px]
             "
           >
-            I build digital
+            Mohamed Ashraf
             <br />
-            <span className="text-zinc-500">products that</span>
+            <span className="text-zinc-500">Frontend Developer building</span>
             <br />
             <span className="relative">
-              work.
+              modern web products.
               <span
                 className="
                   absolute
@@ -259,8 +259,9 @@ export default function Hero() {
               md:leading-8
             "
           >
-            I design and build scalable web applications, SaaS platforms and
-            modern digital products using React, Next.js and TypeScript.
+            Mohamed Ashraf is a Frontend Developer who builds scalable web
+            applications, SaaS platforms, and modern digital products using
+            React, Next.js, TypeScript, and JavaScript.
           </p>
 
           {/* Buttons */}
@@ -477,18 +478,18 @@ export default function Hero() {
                 "linear-gradient(to bottom, black 0%, black 78%, transparent 100%)",
             }}
           >
-           <Image
-  src="https://res.cloudinary.com/doeowykct/image/upload/v1788393484/WhatsApp_Image_2026-09-03_at_2.57.30_AM_d1q11t.jpg"
-  alt="Mohamed Ashraf - Frontend Engineer"
-  fill
-  preload
-  sizes="(max-width: 640px) 320px, (max-width: 768px) 384px, (max-width: 1024px) 448px, 512px"
-  className="
+            <Image
+              src="https://res.cloudinary.com/doeowykct/image/upload/v1788393484/WhatsApp_Image_2026-09-03_at_2.57.30_AM_d1q11t.jpg"
+              alt="Mohamed Ashraf - Frontend Engineer"
+              fill
+              priority
+              sizes="(max-width: 640px) 320px, (max-width: 768px) 384px, (max-width: 1024px) 448px, 512px"
+              className="
     object-cover
     object-top
     contrast-[1.04]
   "
-/>
+            />
           </div>
 
           {/* Purple Accent */}
@@ -515,7 +516,7 @@ export default function Hero() {
               y: [0, -7, 0],
             }}
             transition={{
-              duration: 5,
+              duration: 6,
               repeat: Infinity,
               ease: "easeInOut",
             }}
